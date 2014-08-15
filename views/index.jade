@@ -1,14 +1,447 @@
-!= title_with_markup()
-
-:markdown
-  **Whoo!** You got everything working. Now get to making cool things : )
-
-p this file can be found in views/index.jade
-
-include _partial
-
-:markdown
-  For help and documentation, check out [http://roots.cx](http://roots.cx)
-
-:coffeescript
-  console.log 'you can even use coffeescript in your views, aw yeah'
+.row
+  .col-md-3.l-content
+    .profile-pic
+      .pic-bg
+        img.img-responsive(src='img/profile-avatar.png', alt='')
+    nav
+      ul.navigation
+        li
+          a(href='#')
+            | Profile
+            i.fa.fa-user
+        li
+          a(href='#')
+            | Work
+            i.fa.fa-briefcase
+        li
+          a(href='#')
+            | Resume
+            i.fa.fa-file-text
+        li
+          a(href='#')
+            | Blog
+            i.fa.fa-comment
+        li
+          a(href='#')
+            | Contact
+            i.fa.fa-envelope
+  .col-md-9.r-content
+    .flexslider
+      .slides
+        // SECTION 1 - HOMEPAGE
+        section.no-display
+          #1.profile
+            h2
+              | Hello, I am
+              span Robb Armstrong
+              br
+              | Designer and Front-end Developer
+            .sep1
+            p
+              | I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.
+            .personal-info.col-md-12.no-padding
+              h4 Personal Info
+              .sep2
+              ul
+                li
+                  .p-info
+                    em name
+                    span Robb Armstrong
+                li
+                  .p-info
+                    em date of birth
+                    span September 06, 1976
+                li
+                  .p-info
+                    em e-mail
+                    span info@yourdomain.com
+                li
+                  .p-info
+                    em address
+                    span 121 King St, Melbourne VIC
+                li
+                  .p-info
+                    em phone
+                    span 012-3456-7890
+                li
+                  .p-info
+                    em website
+                    span www.themeforest.net
+            .clearfix
+        // SECTION 1 - HOMEPAGE
+        // SECTION 2 - WORKS / PROJECTS / PORTFOLIO
+        section.no-display
+          #2.works
+            .page-head
+              .row
+                .col-md-5
+                  h3 Portfolio
+                .col-md-7
+                  .np-main
+                    p Go to next/previous page
+                    .np-controls
+                      a.previous(href='#')
+                        i.fa.fa-arrow-circle-left
+                      a.next(href='#')
+                        i.fa.fa-arrow-circle-right
+            .portfolio-wrap
+              .row
+                ul#filter-list.clearfix
+                  li.filter(data-filter='all')
+                    i.fa.fa-th
+                    | All
+                  li.filter(data-filter='webdesign') Web Design
+                  li.filter(data-filter='appicon') App Icons
+                  li.filter(data-filter='iosappui') iOS App UI
+                  li.filter(data-filter='illustration') Illustration
+                ul#portfolio
+                  li.item.col-md-4.webdesign
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/1.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.illustration
+                    a.nivo-lbox(href='https://www.youtube.com/watch?v=L9szn1QQfas')
+                      .folio-img
+                        img.img-responsive(src='img/projects/2.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.appicon
+                    a.nivo-lbox(href='http://vimeo.com/71071717')
+                      .folio-img
+                        img.img-responsive(src='img/projects/3.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.iosappui
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/4.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.iosappui
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/5.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.illustration
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/6.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.webdesign
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/7.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.iosappui
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/8.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.webdesign
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/9.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.illustration
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/10.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.appicon
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/11.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+                  li.item.col-md-4.iosappui
+                    a.nivo-lbox(href='img/projects/1-big.jpg')
+                      .folio-img
+                        img.img-responsive(src='img/projects/12.jpg', alt='')
+                        .overlay
+                          .overlay-inner
+                            h4 Cool App Design
+                            p branding, logo
+        // SECTION 2 - WORKS / PROJECTS / PORTFOLIO
+        // SECTION 3 - CV / RESUME
+        section.no-display
+          #3.item.resume
+            .page-head
+              .row
+                .col-md-5
+                  h3 Resume
+                .col-md-7
+                  .np-main
+                    p Go to next/previous page
+                    .np-controls
+                      a.previous(href='#')
+                        i.fa.fa-arrow-circle-left
+                      a.next(href='#')
+                        i.fa.fa-arrow-circle-right
+            .resume-info
+              h4 Education
+              .sep2
+              ul
+                li
+                  h5 Academy of Art University
+                  span.year
+                    i.fa.fa-calendar
+                    | 2001 - 2004
+                  p
+                    | Academy of Art University's School of Web Design & New Media is the intersection between traditional design and new technologies.
+                li
+                  h5 IT Technical Institute
+                  span.year
+                    i.fa.fa-calendar
+                    | 2005 - 2008
+                  p
+                    | Information technology (IT) workers can be found in many types of organizations. According to the U.S. Department of Labor, "In the modern workplace, it is imperative that Information Technology (IT) works both effectively and reliably
+                li
+                  h5 Web Design School
+                  span.year
+                    i.fa.fa-calendar
+                    | 2009 - 2012
+                  p
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+            .skills-info
+              h4 Skills
+              .sep2
+              ul
+                li
+                  p
+                    | Wordpress Development
+                    span 71%
+                  .skills-bg
+                    span.skill1
+                li
+                  p
+                    | Photoshop
+                    span 85%
+                  .skills-bg
+                    span.skill2
+                li
+                  p
+                    | HTML5/CSS3
+                    span 76%
+                  .skills-bg
+                    span.skill3
+                li
+                  p
+                    | Ruby on Rails
+                    span 53%
+                  .skills-bg
+                    span.skill4
+                li
+                  p
+                    | Social Marketing
+                    span 69%
+                  .skills-bg
+                    span.skill5
+            .services-info
+              h4 Services
+              .sep2
+              ul
+                li
+                  i.fa.fa-cloud
+                  h5 Design
+                li
+                  i.fa.fa-smile-o
+                  h5 Coding
+                li
+                  i.fa.fa-desktop
+                  h5 Responsive
+                li
+                  i.fa.fa-text-width
+                  h5 Planing
+                li
+                  i.fa.fa-comment
+                  h5 Wordpress
+                li
+                  i.fa.fa-picture-o
+                  h5 Photography
+            .resume-info
+              h4 Work Experience
+              .sep2
+              ul
+                li
+                  h5 Graphic River
+                  span.year
+                    i.fa.fa-calendar
+                    | 2001 - 2004
+                  p
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+                li
+                  h5 Video Hive
+                  span.year
+                    i.fa.fa-calendar
+                    | 2005 - 2008
+                  p
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                li
+                  h5 Themeforest
+                  span.year
+                    i.fa.fa-calendar
+                    | 2009 - 2014
+                  p
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+        // SECTION 3 - CV / RESUME
+        // SECTION 4 - BLOG / NEWS
+        section.no-display
+          #4.item.blog
+            .page-head
+              .row
+                .col-md-5
+                  h3 Blog
+                .col-md-7
+                  .np-main
+                    p Go to next/previous page
+                    .np-controls
+                      a.previous(href='#')
+                        i.fa.fa-arrow-circle-left
+                      a.next(href='#')
+                        i.fa.fa-arrow-circle-right
+            .blog-wrap
+              article
+                .row
+                  .col-md-5
+                    img.img-responsive(src='img/blog/1.jpg', alt='')
+                  .col-md-7
+                    h3
+                      a(href='./blog-single.html') Standard Post with Image
+                    .post-meta
+                      i.fa.fa-calendar
+                      a(href='#') 30 march
+                      i.fa.fa-user
+                      a(href='#') Admin
+                      i.fa.fa-comments
+                      a(href='#') 10 Comments
+                    p
+                      | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              .link-post
+                .row
+                  .col-md-12
+                    i.fa.fa-link
+                    a(href='http://www.themeforest.net', target='_blank') www.themeforest.net
+              article
+                .row
+                  .col-md-5
+                    img.img-responsive(src='img/blog/2.jpg', alt='')
+                  .col-md-7
+                    h3
+                      a(href='./blog-single.html') Standard Post with Image
+                    .post-meta
+                      i.fa.fa-calendar
+                      a(href='#') 30 march
+                      i.fa.fa-user
+                      a(href='#') Admin
+                      i.fa.fa-comments
+                      a(href='#') 10 Comments
+                    p
+                      | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              .quote-post
+                .row
+                  .col-md-12
+                    blockquote
+                      | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aene.This is photoshop's version f Lorem Ipsum.
+                    i.fa.fa-quote-left
+                    span.author-name John Smith
+              article.no-border
+                .row
+                  .col-md-5
+                    img.img-responsive(src='img/blog/3.jpg', alt='')
+                  .col-md-7
+                    h3
+                      a(href='./blog-single.html') Standard Post with Image
+                    .post-meta
+                      i.fa.fa-calendar
+                      a(href='#') 30 march
+                      i.fa.fa-user
+                      a(href='#') Admin
+                      i.fa.fa-comments
+                      a(href='#') 10 Comments
+                    p
+                      | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        // SECTION 4 - BLOG / NEWS
+        // SECTION 5 - CONTACT
+        section.no-height
+          #5.item.contact
+            .page-head
+              .row
+                .col-md-5
+                  h3 Contact Us
+                .col-md-7
+                  .np-main
+                    p Go to next/previous page
+                    .np-controls
+                      a.previous(href='#')
+                        i.fa.fa-arrow-circle-left
+                      a.next(href='#')
+                        i.fa.fa-arrow-circle-right
+            .map
+              .gmap
+                #map
+            .contact-info
+              h4 Contact info
+              p
+                | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+              ul
+                li
+                  i.fa.fa-home
+                  | lorem ipsum street
+                li
+                  i.fa.fa-phone
+                  | +399 (500) 321 9548
+                li
+                  i.fa.fa-envelope
+                  | info@domain.com
+            .contact-form
+              h4 Send us a message
+              form#contactForm(action='php/contact.php', method='post')
+                .row
+                  .col-md-4
+                    input#senderName(type='text', name='senderName', placeholder='name')
+                    input#senderEmail(type='email', name='senderEmail', placeholder='e-mail')
+                    input#subject(type='text', name='subject', placeholder='Subject')
+                  .col-md-8
+                    textarea#message(name='message', rows='6', placeholder='Message')
+                    button(type='submit') Send Message
+              #successMessage.successmessage
+                p
+                  span.success-ico
+                  | Thanks for sending your message! We'll get back to you shortly.
+              #failureMessage.errormessage
+                p
+                  span.error-ico
+                  | There was a problem sending your message. Please try again.
+              #incompleteMessage.statusMessage
+                p Please complete all the fields in the form before sending.
+        // SECTION 5 - CONTACT
