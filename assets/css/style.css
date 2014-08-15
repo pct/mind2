@@ -80,7 +80,6 @@ a:hover {
 }
 
 .profile-pic {
-	background: url(../img/profile-bg.jpg) no-repeat;
 	height: 266px;
 	position: relative;
 }
@@ -946,6 +945,7 @@ footer {
 	background: #f1f1f1;
 	height: 70px;
 	padding: 20px 30px;
+  bottom: 0px;
 	position: relative;
 	z-index: 99;
 }

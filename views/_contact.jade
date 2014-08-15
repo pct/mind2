@@ -1,0 +1,52 @@
+section.no-height
+  #5.item.contact
+    .page-head
+      .row
+        .col-md-5
+          h3 聯繫我
+        .col-md-7
+          .np-main
+            p Go to next/previous page
+            .np-controls
+              a.previous(href='#')
+                i.fa.fa-arrow-circle-left
+              a.next(href='#')
+                i.fa.fa-arrow-circle-right
+    .map
+      .gmap
+        #map
+    .contact-info
+      h4 Contact info
+      p
+        | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+      ul
+        li
+          i.fa.fa-home
+          | lorem ipsum street
+        li
+          i.fa.fa-phone
+          | +399 (500) 321 9548
+        li
+          i.fa.fa-envelope
+          | info@domain.com
+    .contact-form
+      h4 Send us a message
+      form#contactForm(action='php/contact.php', method='post')
+        .row
+          .col-md-4
+            input#senderName(type='text', name='senderName', placeholder='name')
+            input#senderEmail(type='email', name='senderEmail', placeholder='e-mail')
+            input#subject(type='text', name='subject', placeholder='Subject')
+          .col-md-8
+            textarea#message(name='message', rows='6', placeholder='Message')
+            button(type='submit') Send Message
+      #successMessage.successmessage
+        p
+          span.success-ico
+          | Thanks for sending your message! We'll get back to you shortly.
+      #failureMessage.errormessage
+        p
+          span.error-ico
+          | There was a problem sending your message. Please try again.
+      #incompleteMessage.statusMessage
+        p Please complete all the fields in the form before sending.
